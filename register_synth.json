@@ -1,0 +1,164 @@
+{
+  "creator": "Yosys 0.56 (git sha1 9c447ad9d4b1ea589369364eea38b4d70da2c599, x86_64-w64-mingw32-g++ 15.2.0 -march=nocona -msahf -mtune=generic -O2 -fstack-protector-strong -O3)",
+  "modules": {
+    "register4": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "register4.v:1.1-6.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "load": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "d": {
+          "direction": "input",
+          "bits": [ 5, 6, 7, 8 ]
+        },
+        "q": {
+          "direction": "output",
+          "bits": [ 9, 10, 11, 12 ]
+        }
+      },
+      "cells": {
+        "$auto$ff.cc:266:slice$85": {
+          "hide_name": 1,
+          "type": "$_DFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "register4.v:2.5-5.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 5 ],
+            "E": [ 4 ],
+            "Q": [ 9 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$86": {
+          "hide_name": 1,
+          "type": "$_DFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "register4.v:2.5-5.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 6 ],
+            "E": [ 4 ],
+            "Q": [ 10 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$87": {
+          "hide_name": 1,
+          "type": "$_DFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "register4.v:2.5-5.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 7 ],
+            "E": [ 4 ],
+            "Q": [ 11 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$88": {
+          "hide_name": 1,
+          "type": "$_DFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "register4.v:2.5-5.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 8 ],
+            "E": [ 4 ],
+            "Q": [ 12 ],
+            "R": [ 3 ]
+          }
+        }
+      },
+      "netnames": {
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "register4.v:1.24-1.27"
+          }
+        },
+        "d": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8 ],
+          "attributes": {
+            "src": "register4.v:1.64-1.65"
+          }
+        },
+        "load": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "register4.v:1.46-1.50"
+          }
+        },
+        "q": {
+          "hide_name": 0,
+          "bits": [ 9, 10, 11, 12 ],
+          "attributes": {
+            "src": "register4.v:1.84-1.85"
+          }
+        },
+        "rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "register4.v:1.35-1.38"
+          }
+        }
+      }
+    }
+  }
+}
